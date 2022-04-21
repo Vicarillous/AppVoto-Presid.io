@@ -17,19 +17,7 @@ class MainActivity : AppCompatActivity() {
         val irParaCadastroBasico = Intent(this, CadastroBasico::class.java)
 
         btnComecar.setOnClickListener {
-            //startActivity(irParaCadastroBasico)
-            calcDate()
+            startActivity(irParaCadastroBasico)
         }
-    }
-
-    fun calcDate() {
-        val dataNasc = SimpleDateFormat("dd/MM/yyyy")
-        val dataAtual = SimpleDateFormat("dd/MM/yyyy")
-        val dataNascimento = dataNasc.parse("25/06/2005")
-        val dataAtualizada = Calendar.getInstance().time
-        val diferenca = dataAtualizada.time - dataNascimento.time
-        val dias = diferenca / (1000 * 60 * 60 * 24)
-        val idade = dias / 365
-        Log.i("Idade", idade.toString())
     }
 }

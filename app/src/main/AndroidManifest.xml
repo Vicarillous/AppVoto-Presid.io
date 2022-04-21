@@ -25,7 +25,7 @@
             android:name=".CadastroFinal"
             android:exported="false" />
         <activity
-            android:name=".CadastroAvancando"
+            android:name=".CadastroAvancado"
             android:exported="false" />
         <activity
             android:name=".CadastroBasico"
