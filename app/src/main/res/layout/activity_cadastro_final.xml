@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroFinal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Insira seus dados"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Número do cartão"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextNCart"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextNCart"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_material_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="number"
+        android:textSize="14sp"
+        tools:text="xxxx-xxxx-xxxx-xxxx"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNCart" />
+
+    <TextView
+        android:id="@+id/textViewNomeTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Nome do titular"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeTit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNCart" />
+
+    <EditText
+        android:id="@+id/editTextNomeTit"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_material_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="text"
+        android:textSize="14sp"
+        tools:text="Vica M Diniz"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeTit" />
+
+    <TextView
+        android:id="@+id/textViewCodSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Código de segurança"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextCodSeg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeTit" />
+
+    <EditText
+        android:id="@+id/editTextCodSeg"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_material_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="number"
+        android:textSize="14sp"
+        tools:text="123"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCodSeg" />
+
+    <TextView
+        android:id="@+id/textViewVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Data de validade"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextVal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodSeg" />
+
+    <EditText
+        android:id="@+id/editTextVal"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_material_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="number"
+        android:textSize="14sp"
+        tools:text="06/2022"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVal" />
+
+    <TextView
+        android:id="@+id/textViewCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="CPF"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextCPF"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVal" />
+
+    <EditText
+        android:id="@+id/editTextCPF"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_material_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="number"
+        android:textSize="14sp"
+        tools:text="123.456.789-12"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCPF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="*Obrigatório"
+        android:textSize="10sp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintStart_toStartOf="@+id/editTextCPF"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCPF" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_material_input"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingHorizontal="20dp"
+        android:text="Continuar"
+        android:textSize="16sp"
+        app:backgroundTint="@color/abacate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pular"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
