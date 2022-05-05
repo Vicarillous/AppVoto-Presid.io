@@ -19,44 +19,64 @@ class CadastroBasico : AppCompatActivity() {
         val btnContinuar = findViewById<Button>(R.id.button)
         val irParaCadastroAvancado = Intent(this, CadastroAvancado::class.java)
 
+        onTextChangedListener(dateInput)
+
+        onClick(btnContinuar, dateInput, irParaCadastroAvancado)
+    }
+
+    private fun onClick(
+        btnContinuar: Button,
+        dateInput: EditText,
+        irParaCadastroAvancado: Intent
+    ) {
+        btnContinuar.setOnClickListener {
+            val nascimento = dateInput.text.toString()
+
+            nascimento.takeIf { it.isEmpty() || it.length < 10 }?.let {
+                Log.i("Data", "Data de nascimento necessária!")
+                Toast.makeText(
+                    applicationContext,
+                    "Data de nascimento necessária!",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } ?: run {
+                Pessoa.dataNasc = nascimento
+                startActivity(irParaCadastroAvancado)
+            }
+        }
+    }
+
+    private fun onTextChangedListener(dateInput: EditText) {
         dateInput.addTextChangedListener(object : TextWatcher {
 
             override fun afterTextChanged(s: Editable) {
-                if(dateInput.length() >= 11) {
+                if (dateInput.length() >= 11) {
                     val length = dateInput.length()
                     dateInput.text.delete(length - 1, length)
                 }
             }
 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
+            override fun beforeTextChanged(
+                s: CharSequence, start: Int,
+                count: Int, after: Int
+            ) {
             }
 
-            override fun onTextChanged(s: CharSequence, start: Int,
-                                       before: Int, count: Int) {
+            override fun onTextChanged(
+                s: CharSequence, start: Int,
+                before: Int, count: Int
+            ) {
                 Log.i("Texto", "Texto: $s")
                 Log.i("Texto", "Start: $start")
                 Log.i("Texto", "Before: $before")
                 Log.i("Texto", "Count: $count")
                 Log.i("Texto", "---------------------------------")
-                if(count != 0) {
-                    if(s.length == 2 || s.length == 5) {
+                if (count != 0) {
+                    if (s.length == 2 || s.length == 5) {
                         dateInput.append("/")
                     }
                 }
             }
         })
-
-        btnContinuar.setOnClickListener {
-            val nascimento = dateInput.text.toString()
-
-            nascimento.takeIf { it.isEmpty() || it.length < 10 }?.let {
-                Log.i("Data","Data de nascimento necessária!")
-                Toast.makeText(applicationContext, "Data de nascimento necessária!", Toast.LENGTH_SHORT).show()
-            } ?: run {
-                Pessoa.setDataNasc(nascimento)
-                startActivity(irParaCadastroAvancado)
-            }
-        }
     }
 }

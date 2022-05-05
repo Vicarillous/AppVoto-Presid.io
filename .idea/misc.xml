@@ -4,14 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/drawable/rounded_material_input.xml" value="0.387" />
+        <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/drawable/x_icon.xml" value="0.268" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_cadastro_avancando.xml" value="0.33" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_cadastro_basico.xml" value="0.33" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_cadastro_final.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_cadastro_final2.xml" value="0.38697916666666665" />
-        <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_deve_votar.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_deve_votar.xml" value="0.25" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_nao_vota.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_pode_votar.xml" value="0.33" />
+        <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/activity_video_player.xml" value="0.22" />
         <entry key="..\:/Users/Vica/AndroidStudioProjects/AppVoto/app/src/main/res/layout/include_name.xml" value="0.38697916666666665" />
       </map>
     </option>

@@ -1,22 +1,17 @@
 package com.example.appvoto
 
-import android.util.Log
 import java.text.SimpleDateFormat
 import java.util.*
 
 class Pessoa {
 
     companion object {
-        private var dataNasc: String = "" //data de nascimento
-        private var idade: Long = 0 //idade
+        // Em kotlin, não é necessário criar os métodos get e set, pois são criados automaticamente pela linguagem Kotlin
+        // Caso não queira criar os métodos get e set, basta colocar o modificador de acesso private
 
-        fun getIdade(): Long { //retorna a idade
-            return idade
-        }
-
-        fun setDataNasc(dataNasc: String) { //seta a data de nascimento
-            this.dataNasc = dataNasc
-        }
+        var dataNasc: String = ""
+        var idade: Long = 0
+            private set // nesse caso, o método set não será criado automaticamente, mas o método get será criado automaticamente
 
         fun calcDate(): Long { //calcula a idade
             val dataNascimento = SimpleDateFormat("dd/MM/yyyy").parse(dataNasc) //transforma a data de nascimento em Date

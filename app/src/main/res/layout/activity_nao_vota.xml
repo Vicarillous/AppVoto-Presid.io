@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Você ainda não está apto\nparavotar"
+        android:text="Você ainda não está apto\npara votar"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="26sp"
@@ -21,11 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/nao_vota_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Infelizmente você ainda não pode votar, espere n anos e você estará apto para isso.  "
+        android:text="Infelizmente você ainda não pode votar, espere alguns anos e você estará apto para isso."
         android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/black"
         android:textSize="16sp"

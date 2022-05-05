@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AppVoto</string>
-    <string name="description">Lörem ipsum parade nebalig jöv tills stenossade bimina. Parasocial div. Lörem ipsum parade nebalig jöv tills stenossade bimina. Parasocial div.</string>
+    <string name="description">Que votar mas não sabe se já tem a idade necessária? Basta inserir alguns dados básicos e falaremos para você sobre sua atual situação!</string>
     <string name="pode_votar">Você já pode votar</string>
     <string name="text_1">Solicite seu título através do site do TRE. Basta digitalizar os seguites documentos.</string>
     <string name="list">• Documento oficial de identidade com foto (frente e verso).\n\n• Comprovante de residência recente (no caso de transferência, prazo mínimo de três meses de residência no novo endereço).\n\n• Comprovante de pagamento de débito com a Justiça Eleitoral (quando houver débito).\n\n• Comprovante de quitação do serviço militar, para o alistamento, sendo o requerente do sexo masculino (para homens com 19 anos que ainda não tenham título eleitoral).</string>

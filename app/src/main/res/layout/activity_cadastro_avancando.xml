@@ -114,7 +114,6 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/rounded_material_input"
         android:fontFamily="@font/montserrat_regular"
-        android:inputType="date"
         android:paddingHorizontal="16dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextUF"

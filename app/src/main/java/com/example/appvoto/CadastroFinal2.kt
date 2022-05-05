@@ -12,20 +12,32 @@ class CadastroFinal2 : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro_final2)
 
         val btnVamosLa = findViewById<Button>(R.id.button)
-        btnVamosLa.setOnClickListener {
-            val idade = Pessoa.calcDate();
+        val btnPular = findViewById<TextView>(R.id.textViewPular)
 
-            if(idade >= 18){
+        btnVamosLa.setOnClickListener {
+            mostrarPaginaResultado()
+        }
+
+        btnPular.setOnClickListener {
+            mostrarPaginaResultado()
+        }
+    }
+
+    private fun mostrarPaginaResultado() {
+        when (val idade = Pessoa.calcDate()) {
+            in 18..Long.MAX_VALUE -> { // 18 anos ou mais
                 val irParaDeveVotar = Intent(this, DeveVotar::class.java)
                 startActivity(irParaDeveVotar)
-            }else if (idade in 16..17){
+            }
+            in 16..17 -> { // 16 a 17 anos
                 val irParaPodeVotar = Intent(this, PodeVotar::class.java)
                 startActivity(irParaPodeVotar)
-            } else {
+            }
+            else -> { // menos de 16 anos
                 val irParaNaoVota = Intent(this, NaoVota::class.java)
+                irParaNaoVota.putExtra("idade", idade)
                 startActivity(irParaNaoVota)
             }
         }
-
     }
 }
